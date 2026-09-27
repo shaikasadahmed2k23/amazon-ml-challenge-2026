@@ -1,0 +1,48 @@
+# Data (provided by the challenge; too large for git)
+dataset/
+
+# Cached / intermediate artifacts
+*.parquet
+cache/
+output/*
+!output/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+
+# Submission packages (built by make_submission_zip.py)
+*_submission.zip
+
+# Kaggle run artifacts (downloaded locally; large)
+run1/
+run2/
+run3/
+run4/
+run.log
+output/*.tsv
+output_ce/
+cache_ce/
+output_m2/
+run_ce/
+ML_submission_ce.zip
+output_stack/
+ML_submission_ce_w0.6.zip
+ML_submission_ce_w0.4.zip
+ML_submission_run4.zip
+run_stack/
+output_ce2/
+cache_ce2/
+output_stack2/
+output_stack3/
+cache_ce/stack3/
+run_stack2/
+output_ce3/
+cache_ce3/
+output_stack4/
+ML_submission_stack_v1.zip
+run_stack3/

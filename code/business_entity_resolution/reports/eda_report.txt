@@ -1,0 +1,490 @@
+
+====================================================================================================
+3. GROUND TRUTH STATS
+====================================================================================================
+S1 entities in ground truth: 2,206,821 (unique: 2,206,821)
+Singletons (empty match list): 123,247 (5.58%)
+Total matched ids: 7,638,365  |  mean per non-singleton: 3.67
+
+Match-list size distribution (including 0 = singleton):
+       count    pct
+size               
+0     123247   5.58
+1     119157   5.40
+2     375212  17.00
+3     530841  24.05
+4     484115  21.94
+5     321957  14.59
+6     164868   7.47
+7      63968   2.90
+8      18680   0.85
+9       4205   0.19
+10       534   0.02
+11        37   0.00
+
+Matched ids from S2: 3,693,619 (48.36%)
+Matched ids from S3: 3,944,746 (51.64%)
+
+Per-entity composition:
+             count    pct
+S2+S3      1776047  80.48
+S3 only     164498   7.45
+S2 only     143029   6.48
+singleton   123247   5.58
+
+S2-per-entity distribution (non-singletons):
+0    164498
+1    789108
+2    652779
+3    333957
+4    119078
+5     24154
+S3-per-entity distribution (non-singletons):
+0    143029
+1    716417
+2    668375
+3    372443
+4    145116
+5     35378
+6      2816
+
+====================================================================================================
+4. S2/S3 IDS MATCHED TO MORE THAN ONE S1
+====================================================================================================
+Distinct matched S2/S3 ids: 7,638,365
+Ids matched to >1 S1: 0 (S2: 0, S3: 0)
+
+====================================================================================================
+1. ROW COUNTS PER FILE AND PER COUNTRY
+====================================================================================================
+split source   total  France   India      US
+train     S1 2206821       0  883188 1323633
+train     S2 5034616       0 2017799 3016817
+train     S3 5285603       0 2115547 3170056
+ test     S1 1732544  259452  809986  663106
+ test     S2 4887273  703378 2312565 1871330
+ test     S3 5082316  731615 2405000 1945701
+
+GT covers 2,206,821 / 2,206,821 train S1 ids; GT ids not in train S1: 0
+Train/test S1 id overlap: 0
+
+====================================================================================================
+2. 10 RANDOM ROWS PER SOURCE PER COUNTRY (train)
+====================================================================================================
+
+--- train S1 | country=India ---
+   entity_id                     business_name                                                                                                                business_address
+S1-311426597                 Informatics Sangh                                                         Centre Chsl Cross Rd No9, Maharashtra, Mumbai, 78 Juhu Supreme Shopping
+S1-132046045 Shree Hospitality Private Limited                                                32Nd Floor, Sunshine Tower, Senapati Bapat Marg, Dadar West, Mumbai, Maharashtra
+S1-290629563      Agri Hospital Public Limited                                            Flat 1119B, Blk-1, Qube Plot Iid/31/1, Newtown, Kolkata, Parganas North, West Bengal
+S1-558106752             Best Products Pvt Ltd                                              G-76 I Block, Thubarhalli, Sonestaa Meadows, Bangalore South, Bangalore, Karnataka
+S1-318162849                Pvr Medical Centre                                                                                  Dr. T.N. Banerjee Road, Patna-1., Patna, Bihar
+S1-401818728  Kodungallur Farm Private Limited                                                    Vii/6(2), Kerala, Thrissur, Kodungallur, Almond Tower Near Private Bus Stand
+S1-782610681               Add Trading Pvt Ltd                                                                    B/1/H/5, Ripon Square, Kolkata, Kolkata, Howrah, West Bengal
+S1-490163994       Ncm Traders Private Limited No.33, K.No.8/2/33, Pillaganahalli (V), 1St Cross Chowdeshwari Layout, Kembathalli Main Ro, Ad, Gottigere, Bangalore, Karnataka
+S1-331290661   Mann & Brothers Private Limited                                                                    Mhow, Shankar Colony Telikheda, Madhya Pradesh, 1124, Indore
+S1-480248393  Real Shyam Power Private Limited                                                   39-A, Iiird Floor Street No. 14 Sarojini Park Shastri Nagar, Delhi, New Delhi
+
+--- train S1 | country=US ---
+   entity_id                       business_name                                 business_address
+S1-209096536                      American Trust             4018 Abasco Street, Fayetteville, NC
+S1-346269526           Drain, Partain & Green LP                     NC, Plymouth, 383 64, Unit 5
+S1-986351495                         Vision Care             1606 A Eugene Avenue, High Point, NC
+S1-732285712 Universal Infrastructure Global Inc 1933 Scianna Road, Unit 1131, San Tan Valley, AZ
+S1-787264630             NU Best Recruiting, LLC               3203 Creekside Drive, Westlake, OH
+S1-672212540                   HP Utilities PLLC                     7222 6th Avenue, Seattle, WA
+S1-379492748           Veronika Taylor Signs LLC         7093 Paw Print Path, Pleasant Valley, AK
+S1-158714711                           Lacey Rio        Lacey, Fl 1, 1420 Boulevard Park Lane, WA
+ S1-64151766            Hendrix and Kent Acp LLC                    NC, Richlands, 8 Dalton Court
+S1-220136865                    Express Research                  2942 Baffin Drive, Hamilton, OH
+
+--- train S2 | country=India ---
+   entity_id                     business_name                                                                                         business_address
+S2-135811809     राम इम्पेक्स प्राइवेट लिमिटेड                                                               ROW HOUSE NO 6, NASHIK, NASIK, Maharashtra
+  S2-9360397  Weal Educational Society Limited                       West Bengal, DOOR NO 174/A RASH BEHARI AENUE, RASH BEHARI AVENUE, KOLKATA, KOLKATA
+S2-131526386                      Theta Center                                         Tamil Nadu, H.NO 738 23, SUNDARAM NAGAR SECOND STREET, THANJAVUR
+S2-269477570                   vanajapipes.com         BLOCK G-687 C/O LAXMANRAO HARIBHAU GANGAWAL, H. NO. 1-15-995, SHRIRAM NAGAR, NANDED, Maharashtra
+S2-317762050     Pvt Sirs (India) Textiles Ltd                                                             RADHA VILAS, LISSY ROAD, COCHIN -18, Keralam
+ S2-97709870 Swastik Services Garments Pvt Ltd                          H.NO 456 B-1311 SARA METROVILLE, SR. NO. 11/1, PUNAWALE, PUNE CITY, Maharashtra
+S2-216667630   Abacus Dreams Pbratfte  Limited                                         GK-II/101/ GF-3, INDIRAPURAM, GHAZIABAD, GHAZIABAD, उत्तर प्रदेश
+S2-242515355       M/s Falcon Limited  Service B/502, SHREEPAD ANANTTA, B/H. SANJIVKUMAR AUDITORIUM, NR. RAJHANS CINEMA, PAL, SURAT CITY, null, Gujarat
+S2-141661686        Dr KASHMIR BIOTECH PRIVATE                                                NO 00137 C-157, SECTOR-19 NOIDA, NOIDA, N/A, उत्तर प्रदेश
+S2-621014481         Lucknow Stainless Company                                              AMHADNAGAR PATAURA, SALEMPUR, KAKORI, LUCKNOW, उत्तर प्रदेश
+
+--- train S2 | country=US ---
+   entity_id                    business_name                        business_address
+ S2-79955082           littequitypartners.com              80 RED TOP RD, WIBAUUX, MT
+S2-824251229           JAMISON NETWORK CENTER              208 CRAIN ST, MONTEREY, TN
+S2-676856326          Colonial United Jackson     545 TREMONT ST, NY, NORTH TONAWANDA
+S2-777087783                 Herrera  Delgado              69 PINTAIL LN, WV, WEIRTON
+S2-396900059 Lucero, Hernandez Denbow & Crest                                        
+S2-124019692      Consiglio & Ramirez Ramirez       1562 CAPRINE COURT, ROCK HILL, SC
+S2-973290803               Betty Tang Pioneer    SAINT GEORGE, 2086 RISING SUN DR, UT
+S2-771576793                   Mixon Dbdr LLC          1301 Holcomb St, WATERTOWN, NY
+S2-820144419            MIDWEST LIFESCIENCES, 1301 WARD BOULEVARD, CITY OF WILSON, NC
+ S2-89582636                 Collazo Element,  2219 WESTBN AVE, NAGARA FALLS CITY, NY
+
+--- train S3 | country=India ---
+   entity_id                                 business_name                                                                      business_address
+S3-160252930                           Pns Maabohhnwer LLP               C/o. Raymond Limited, Jekegram, Pokharan Road, No. 1, Thane, महाराष्ट्र
+S3-702515806             Diligent Organics Private Limited                                                     41-29/6-8, Vijayawada (Urban), AP
+S3-142119500                Pvt Gurukripa Traders Care Ltd                                                                428/3, Ludhiana, ਪੰਜਾਬ
+S3-836734079                                    OJG Energy                                                         House No. G-1 F, Ludhiana, PB
+S3-443088532                  Ss Perooderc Private Limited 112, Ferns Residency, Syno. 1/1(P)-1/4(P), 10/1P, Bangalore South, Bangalore, ಕರ್ನಾಟಕ
+S3-589471226                      TVZ Foods Limited Center                  Lunkad Queensland Bl-b1 Fl-103 Sn-210/1/1 Vimangr/lohogaon, Pune, MH
+S3-782877549                        UPX Management Private         Gat No. 100/4, Shivshambho Palace Balapudi Pata, Tal. Indapur, Pune, NULL, MH
+S3-832891378 Emson Hitech (lndia) Ventures Private Limited                                                   No 11-1-3, Srikakulam, ఆంధ్రప్రదేశ్
+S3-667377464                              Super Foundation                H.no 552 C/o Ankit Ranjan, Road No.-9, Tej Pratap, Patna, Phulwari, BR
+S3-516291153                      லோட்டஸ் குளோபல் லிமிடெட்                                                              #15, Mumbai, Chennai, TN
+
+--- train S3 | country=US ---
+   entity_id                        business_name                                 business_address
+S3-673105686  Frederick Direct Cartesian Holdings            9626 Bothwell Ln, Frederick, Maryland
+S3-329830122          Rayshell S. Kowalski, [MD,]          Ohio, Cincinnati, 1025 Reed Hartman Hwy
+S3-488962094                       Coastal-Center                      Padre Avenue, Keller, Texas
+S3-455307947          Prime Cloud Care Collective                  Branch Rd, York, South Carolina
+S3-703359163            Beebe, Fuentes and George    1832 Saint Clair Lane, Hanover Park, Illinois
+S3-812852276                 The Ly Cardiology LP                 05362 State Rt 14, Ohio, Ravenna
+S3-311095014                       LLC Fry Htodco            304 Bayard St, Seneca Falls, New York
+S3-479177259                                  CCA          5802 Horseshoe Falls, Missouri City, TX
+S3-922143499 Economic Development Initiative V Co 2780 Lindale Mt Holly Rd, Unit 115, Amelia, Ohio
+ S3-56033353                   UY Information Ínc                                                 
+
+====================================================================================================
+2b. 10 RANDOM ROWS PER SOURCE PER COUNTRY (test)
+====================================================================================================
+
+--- test S1 | country=France ---
+   entity_id           business_name                                                 business_address
+S1-758041306        Amicale des High 15 Rangée Farvacque, 11b rue boucicaut, Roubaix, Hauts-de-France
+S1-295585629         Institut Petits         Nouvelle-Aquitaine, Lège-Cap-Ferret, 61 Avenue du Moulin
+S1-742461255 Privée Amicale (France)                     Pays de la Loire, Nantes, 9 Rue Félix Thomas
+S1-665253183    Organisme Union SARL               6 Impasse Saint Honoré, Tourcoing, Hauts-de-France
+S1-306023551    Derives Amicale SARL                 178 Rue Louise Bourgeois, Lille, Hauts-de-France
+S1-294941625         Pre Amicale SCI         50 Rue André Lesca, La Teste-de-Buch, Nouvelle-Aquitaine
+S1-489511170        Amicale des Iris      14 Avenue Jean Paul Marat, Saint-Herblain, Pays de la Loire
+S1-299959870         Clinique Marcel          3 ALL de l Oiseau Lyre, A42, Tourcoing, Hauts-de-France
+S1-354370129  Philharmonique Sportif                           41 Rue Royale, Calais, Hauts-de-France
+S1-429044135      Nantes Comite SARL            15 BD Leon Blum, Batiment B, Nantes, Pays de la Loire
+
+--- test S1 | country=India ---
+   entity_id                          business_name                                                                              business_address
+S1-809479881        Aspire Hospital Private Limited                      3, Rajmahal Colony Extension Near Lalbagh Palace, Indore, Madhya Pradesh
+S1-721601725                           Awm Care Ltd                                              72-76 Industrial Estatemudhwa, Pune, Maharashtra
+S1-853533066   Hyderabad Consultants Public Limited Mjr Arcade 3Rd Floor, Plot No. 1000 Gurukul Society, Khanamet, Madhapur, Hyderabad, Telangana
+ S1-55074476                Replica Enterprises LLP                                            F-2, Gautam Marg Vaishali Nagar, Jaipur, Rajasthan
+S1-244694347     Vision Consultants Private Limited      Mp 12/546 Sreemangalam, Mananakku, Perumkulam Po, Thiruvananthapuram, Trivandrum, Kerala
+ S1-75183922     Lakshmi Investment Private Limited                                                412, Jagannathpuri Jhotwara, Jaipur, Rajasthan
+S1-569077968                    Gms Fashion (India) F. No. 301, Honey Homes Opp Na. Poranki Road, Nidamanuru, Vijayawada, Krishna, Andhra Pradesh
+ S1-63503041          Alpha Finance Private Limited                                           #1042, Housing Board, Ambala Cantt, Ambala, Haryana
+S1-846952880 Energy Rosy Innovative Private Limited           Tower T1 B1 302, Mahindra Windchimes Arekere, Bangalore South, Bangalore, Karnataka
+S1-241147096             Shiv International Pvt Ltd      Plot No. E/43, Infocity, Chandaka Industrial Estate, Patia, Bhubaneswar, Khordha, Orissa
+
+--- test S1 | country=US ---
+   entity_id                business_name                          business_address
+S1-290598020       Batecus Quality Clinic             314 9th Street, Massillon, OH
+S1-844569542         Main Street Hypnosis    1201 Mystic Village Lane, Seabrook, TX
+S1-677018777            Downtown Hypnosis          500 Overhill Road, Baltimore, MD
+S1-462345633           Downtown Bike Shop            3945 184th Street, Russell, KS
+S1-364233475 Chrysa Hall, DDS, M.D., P.C.        3507 Hemlock Drive, Valparaiso, IN
+ S1-54750431        Haywood & Murphy, Inc   567 Amity Church Road, Iron Station, NC
+S1-608826143          Jany Rivera, DDS PC 4994 Commerce Drive, Unit 312, Murray, UT
+S1-321749154     Painters Local Union 464            8130 Oahu Drive, Fair Oaks, CA
+S1-163502032  Valle, Grant & Driscoll LLC             809 Savannah Way, Bedford, TX
+S1-898746070         Doherty & Carter LLC           2249 Firethorn Way, Phoenix, AZ
+
+--- test S2 | country=France ---
+   entity_id                         business_name                                          business_address
+ S2-84929399                       LILLE  SPORTIVE                           146 RUE DU MOLINEL, LILLE, Nord
+S2-391695014                     DOV SARL SERVICES                             AVE D’ARGUIN, LÈGE-CAP-FERRET
+S2-288494080 Nature (France) Section International               72 CITÉ DUTEY, BORDEAUX, Nouvelle-Aquitaine
+S2-684470559                Association dês Franco         60 ROUTE DE MARSAC, ST.-NAZAIRE, Pays de la Loire
+ S2-59983937               Bordeaux Rësidence SARL                                1 RUE SAINT-MAUR, BORDEAUX
+S2-980295703                      YB Anciens S.A.S                             54 RUE DE DEIPPE, LILLE, Nord
+S2-189370545                       Maison Bde EURL                    N° 25 AVENUE DE L'HORTICULTURE, NANTES
+S2-212504387                        Deleves Comite                                         RUE JAVARY, LILLE
+S2-541563891                       Sa Mosaic & Cie      369 RUE DE LA RÉPUBLIQUE, Dunkerque, Hauts-de-France
+S2-291566898                       Union de Beauey 350 TER AVENUE DE L'ARGONNE, MÉRIGNAC, Nouvelle-Aquitaine
+
+--- test S2 | country=India ---
+   entity_id                                  business_name                                                                                                                  business_address
+S2-167347871             स्टार बिजनेस इंजीनियरिंग प्रा. लि.                                                                         H. NO. 1046, AT SHIRADHON TQ. KANDHAR, NANDED, महाराष्ट्र
+S2-480383421           PERFECT DEVELOPERS  LIMITED PARTNERS                                                                                DIAMOND HARBOUR ROAD, KONCHOWKI BHASA, West Bengal
+S2-314716162                                   Yks Services                                                                                                                                  
+ S2-83488516 ನ್ಯೂ ಟೆಕ್ನಾಲಜೀಸ್ ರೆಸ್ಟೋರೆಂಟ್ ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್ #00678 SALESFORCE.COM INDIA PRIVATE LIMITED TORREY PINES 8RD FLOOR EMBASSY GOLFLINKS SOFTWARE BUS, INESS PARK, BANGALORE, ಕರ್ನಾಟಕ
+S2-634423853        Mr Bambino Foods (India) Public Limited                                              H.NO 77 FORT ROAD, POSTI KHANA PURANI LOHA MANDI, KILA GATE, GWALIOR, Madhya Pradesh
+S2-980358706                अल कंस्ट्रक्शन प्राइवेट लिमिटेड                                                    S H R -##01 BLOCK 3 G R FLOR ARJUN KHOTAKAR BISNESS SENTER, JALNA, Maharashtra
+ S2-48435106                      BENGALURU ELECTRONIC (CO)                                                                                                                                  
+S2-106322060                           மா இன்ஃப்ரா எல்எல்பி                               G-41 NATESAN STREET, SIVA VISHNU COMPL SIVA VISHNU COMPLEX 2ND FLOOR, T. NAGAR, CHENNAI, Tamil Nadu
+S2-669246298                  Sunrise-Solutions Private Ltd                                               DOOR NO 36 SERVE NO. 57, 2&3 SAIRAJ COLONY, BIJLINAGAR, CHINCHWAD, PUNE, महाराष्ट्र
+S2-955435132           सूर्या कंस्ट्रक्शंस प्राइवेट लिमिटेड                                 PLOT NO.190/A-1, KH. NO. 74/15, 1ST FLOOR, NAVEEN VILLAGE BEGAMPUR, NEW DELHI, NORTH WEST, दिल्ली
+
+--- test S2 | country=US ---
+   entity_id                                 business_name                     business_address
+S2-695167878                   LLC Reliable Plains Greater     NC, CARY, 121 WADDELL PLAZA LANE
+S2-642267356                                  White  Aspac         FIRESIDE DR, BRANDENBURG, KY
+S2-710391750              atlanticfrontieroccupational.com 2788 DEFOORS FERRY ROAD, ATLANTA, GA
+S2-491831733                              RIDGELINE CENTER      44 CHRISTOPHER WAY, HARWICH, MA
+S2-681416734 CARDIOLOGY PLATINUM CARE LLC (COUNCIL) #47362            GOTHAM AVE, HEMPSTEAD, NY
+S2-954768179                        J H Bibbins Pharma Ltd   NC, RALEIH, 4312. WAKE FOREST ROAD
+S2-870913248                              Creative Park Co     4731 GRANDVIEW AVENUE, TEMPE, AZ
+S2-622591165                    Continental Printing Works       597 Greene Avenue, MN, ST PAUL
+S2-336044118                       Fresh Yoga Incorporated             510 29ND ST, WICHITA, KS
+  S2-6177713                        46/51 Dave Corporation           DIXFIELD, 1619 MAIN ST, ME
+
+--- test S3 | country=France ---
+   entity_id                         business_name                                   business_address
+S3-491980724              Solidarite Pharmacie SAS 12 Avenue Du Clos Jaunet, Nantes, Loire-Atlantique
+S3-599609849                  Souffles  Culturelle                     17 Parvis Saint-maurice, Lille
+S3-979624891                    Pharmacie  de Dame           Loire-Atlantique, Nantes, 23 R De Thoiry
+S3-998101177            Malades (France) Sante SAS                  23 Rue Du Tourmalet, St.-herblain
+S3-853046642                          Coeur Centre        5 R Lievbn Delhaye, Calais, Hauts-de-France
+S3-901731655                       egp sportive sa                       Rue Colbert, Tourcoing, Nord
+S3-153725167                              UMU Amis        201 R. Achard, Bordeaux, Nouvelle-Aquitaine
+S3-528104234      Semeuses (France) Sportive S.A.S                         24 Rue Rubens, Lille, Nord
+S3-807075583 Fédération du Développement Francaise                      45 Rue Vital Carles, Bordeaux
+S3-111034561                 Union Holding Aide Du                                      25, Dunkerque
+
+--- test S3 | country=India ---
+   entity_id                            business_name                                                                                            business_address
+S3-969172853           Star Resources Private-Limited                                                                         No 93 C/o Rajendra Bohre, Datia, MP
+S3-307540538              Star International  Limited                                                                       H.no 57-B Chikitsak Nagar, Indore, MP
+ S3-19733750            Anand Brraat Projects Limited                                    C/o Mr. Bhooshan Mehta, 93-C, Shop No. 5, Iit Gate Kalyanpur, Kanpur, UP
+S3-411942562     Agro Shree Interlink Private Limited Flat No-c-605, Ashiwad Indrawati Enclave, Mathiyapur, Near T Point, Khagaul, Dinapur-cum-khagaul, Patna, BR
+S3-582334386           फ्यूचर एस्टेट प्राइवेट लिमिटेड                                                                       H.no #594 47, A Nair Road, Nagpur, MH
+S3-329459723            Shiv Computer Pvt Ltd Service                                                               Rac Ground, <NULL>, Shiv Pura, Kota, राजस्थान
+S3-530248497                       Saanchi  Knowledge                                                        No. B3/368 D-140 Savitri Path Bapu Nagar, Jaipur, RJ
+S3-974927564                                  (india)                                             Delhi, Ground Floor Village Siraspur, House No. 148, North West
+ S3-97948738 Smt Sree Nursing Hóme Enterprises L.L.P.                                  E 51-A, Udyo Kunj, Panki, Industrial Area, Side-2, Panki, Kanpur Nagar, UP
+S3-960693231         स्काई कंसल्टिंग प्राइवेट लिमिटेड                                         H.no. V-14 Machharia Yashoda Nagar, Kanpur, Kanpur Kidwai Nagar, UP
+
+--- test S3 | country=US ---
+   entity_id                                    business_name                                           business_address
+S3-729714713                            United Initianiove Co                       0103 Brazoria Trl, San Marcos, Texas
+S3-805550929                      Total-Silver Perfect L.L.C.                    14303. Broadway Street, Pearland, Texas
+S3-914101958                                A Cure 5 You Corp #85-44 Lefferts Boulevard, PMB 1723, Kew Gardens, New York
+S3-636643855                           piedmont health center                          Vinewood Lane, Rockwood, Illinois
+S3-958542186                             Redding Inc Services                Century Farm Road, Russell County, Virginia
+S3-662457752                       Mcc0y, Truax  And Probasco         004301 Judge Carden Boulevard, Crestwood, Kentucky
+S3-104527102 Oncology Group of Johnson City Associates Harbor                      Johnson City, Tennessee, 114 Brice Ln
+S3-589879746                              Cardiology Pártners         2604 Old Hapeville Rd, Unit 4, Atlnta CDP, Georgia
+S3-649481260                               Leola's  Grill LLC         101 Cayuga Plaza Apartments, Cohoes CITY, New York
+S3-802140256                               Heart Ltd Services                   1536 Summerbrook Drive, Conway, Arkansas
+
+====================================================================================================
+5. 15 MATCHED GROUPS: S1 NEXT TO ITS S2/S3 MATCHES
+====================================================================================================
+
+                           business_name                  business_address country
+S1 > S1-777210964    Davis Family Office      88 Olive Circle, Lebanon, TN      US
+     S2-12029274      Davis Family Offie         88 OLIVE CIR, LEBANON, TN      US
+     S2-407524980    DAVIS FAMILY OFFICE            OLIVE CIR, LEBANON, TN      US
+     S3-970714334  Davis Family (Office)  88 Olive Cir, Lebanon, Tennessee      US
+     S3-712922821           Davis Family  Lebanon, Tennessee, 88 Olive Cir      US
+
+                          business_name                                                                              business_address country
+S1 > S1-190133982   MS Consultancy Corp    Shymala Appts 1St Floor Flat No. 4 Opp Ratna Hospital Sb Road In Haveli, Pune, Maharashtra   India
+     S2-523219173      MS [Consultancy]  SHYMALA APPTS 1-1ST FLOOR FLAT NO. 4 OPP RATNA HOSPITAL SB ROAD IN HAVELI, PUNE, Maharashtra   India
+     S3-716445195  M5  Consultancy Corp       Pune, MH, Pune, Shymala Appts 1St Floor Flat No. 4 Opp Ratna Hospital Sb Road In Haveli   India
+     S3-986804760      MS Corp Services             Shymala Appts 1St Floor Flat No. 4 Opp Ratna Hospital Sb Road In Haveli, Pune, MH   India
+
+                               business_name                   business_address country
+S1 > S1-970131671  3520 Main Road Realty Inc     TX, 158 Simpson Lane, Somerset      US
+     S2-670035601  3520 MAIN ROAD REALTY INC         SIMPSON LANE, SOMERSET, TX      US
+     S3-392756625  3520 MAIN ROAD Realty INC  158 Simpson Lane, Somerset, Texas      US
+
+                           business_name                                                                                         business_address country
+S1 > S1-391999301     Team Air Pvt. Ltd.         Flat No:101, Anuska Towers, Opp. Mercedes Benz Show Room, Lakdi- Ka, -Pool, Hyderabad, Telangana   India
+     S2-742819060            TEAMAIR.COM                      FLAT NO:101, ANUSKA TOWERS, OPP. MERCEDES BENZ SHOW ROOM, LAKDI- KA, -POOL, తెలంగాణ   India
+     S2-339356009      Thg Air Pvt. Ltd.                                                                   FLAT NO:101, -POOL, HYDERABAD, తెలంగాణ   India
+     S2-233734305            teamair.com                    FLAT NO:101, ANUSKA TOWERS, OPP. MERCEDES BENZ SHOW ROOM, LAKDI- KA, -POOL, Telangana   India
+     S3-938838849                Mirasol  Flat No:1-101, Anuska Towers, Opp. Mercedes Benz Show Room, Lakdi- Ka, Hyderabad, -Pool, Andhra Pradesh   India
+     S3-99519749   Team Air Pvt. Limited  Flat No:1-101, Anuska Towers, Opp. Mercedes Benz Show Room, Lakdi- Ka, -Pool, Hyderabad, Andhra Pradesh   India
+
+                       business_name                                 business_address country
+S1 > S1-435988542   Drayex Berto LLC  Montgomery Village, MD, 19821 Wheelwright Drive      US
+     S2-500704398  DRAYEX  BERTO LLC   ##19821 WHEELWRIGHT DR, MONTGOMERY VILLAGE, MD      US
+
+                                 business_name                           business_address country
+S1 > S1-351020560        Grand Connecticut LLC         Calumet City, 351 Hoxie Avenue, IL      US
+     S2-907008976            Grand Connecticut       CALUMET CITY, 351 HOXIE AVE, N/A, IL      US
+     S3-943702663            Grand LLC Service  Illinois, Calumet City, 351- Hoxie Avenue      US
+     S3-503506440            Grand Connecticut  351- Hoxie Avenue, Calumet City, Illinois      US
+     S3-27236093   Grand Grand Connecticut LLC     351- Hoxie Ave, Calumet City, Illinois      US
+
+                                     business_name                                business_address country
+S1 > S1-353020204    Prairie Capital Partners PLLC     120 Autumn Woods Boulevard, Mount Holly, NC      US
+     S2-403125820    PRAIRIE CAPITAL PLLC-PARTNERS    120. Autumn Woods Boulevard, MOUNT HOLLY, NC      US
+     S2-482586584                Prairie (Capital)              AUTUMN WOODS BLVD, MOUNT HOLLY, NC      US
+     S3-740655592  Prairie Partners PLLC  Services  Autumn Woods Blvd, Mount Holly, North Carolina      US
+     S3-701336150    prairie capital partners pllc                                                      US
+
+                     business_name                                                         business_address country
+S1 > S1-374388852   Jalna Chem LLP     At H. No 211, Bhamberi Tq. Ambad S/Dn Dist Jalna, Jalna, Maharashtra   India
+     S2-509116615  Jalna Chem  LLP     AT H. NO 211, BHAMBERI TQ. AMBAD S/DN DIST JALNA, JALNA, Maharashtra   India
+     S3-913638566    Jalna  Ce LLP  Blokc C-724 At H. No 211, Bhamberi Tq. Ambad S/dn Dist Jalna, Jalna, MH   India
+
+                                          business_name                                                     business_address country
+S1 > S1-793615008    Clairvoyant Record Private Limited       1St Floor, Tamrakarmall, New Bus Stand, Sehore, Madhya Pradesh   India
+     S2-102911781    Clairvoyant Ride Private (Limited)  NO 7-1ST FLOOR, TAMRAKARMALL, NEW BUS STAND, SEHORE, Madhya Pradesh   India
+     S2-942337168        Clairvoyant Récord Private Ltd        7-1ST FLOOR, TAMRAKARMALL, NEW BUS STAND, SEHORE, मध्य प्रदेश   India
+     S2-875327982     Clairvoyant Rcdbr Private Limited     7-1ST FLOOR, TAMRAKARMALL, NEW BUS STAND, SEHORE, Madhya Pradesh   India
+     S3-276503007            Clairvoyant Record Private                       1St Floor, Sehore, Madhya Pradesh, मध्य प्रदेश   India
+     S3-154593156  Clairvoyant Rceoad Private (Limited)                                1St Floor, Sehore, Madhya Pradesh, MP   India
+
+                             business_name                                            business_address country
+S1 > S1-339384180      FH Business Pvt Ltd  602, 6Th Floor, Crystal Mall, Bani Park, Jaipur, Rajasthan   India
+     S2-763394237  FH BUSINESS PVT LIMITED   602, 6TH FLOOR, CRYSTAL MALL, BANI PARK, JAIPUR, राजस्थान   India
+     S3-162797226     FH Business Pvt-Ltd.                                             602, Jaipur, RJ   India
+     S3-914554628  FH FH Business Pvt Ltd.         6Th Floor, Crystal Mall, Bani Park, Jaipur, 602, RJ   India
+
+                                   business_name                                                        business_address country
+S1 > S1-83174673      Supreme It Private Limited  Office No S 07 82Haware, Centurion Plt88-91 Sec19A, Thane, Maharashtra   India
+     S2-348030512    Supreme  It Private Limited  OFFICE NO S 07 82HAWARE, CENTURION PLT88-91 SEC19A, THANE, Maharashtra   India
+     S3-755114994  सुप्रीम आईटी प्राइवेट लिमिटेड         Offiec No S ##07 82Haware, Centurion Plt88-91 Sec19a, Thane, MH   India
+     S3-444196916             Supreme It Private         Office No S ##07 82Haware, Centurion Plt88-91 Sec19a, Thane, MH   India
+     S3-130505638  सुप्रीम आईटी प्राइवेट लिमिटेड         Office No S ##07 82Haware, Centurion Plt88-91 Sec19a, Thane, MH   India
+
+                                                                  business_name                                  business_address country
+S1 > S1-350092923                          Cardiology Metro Care Associates Inc    1138 Trimble Creek Drive, West Jordan City, UT      US
+     S2-358229894                                       cardiologymetrocare.com         1138 TRIMBLE CREEK DRIVE, WEST JORDAN, UT      US
+     S2-910624268                                                    cmcáre.com         1138 TRIMBLE CREEK DRIVE, WEST JORDAN, UT      US
+     S3-662458828  Cardiology Metro Care Asfsogiadmrts Inc | www.cardiology.com  1138 Trimble Creek Drive, West Jordan City, Utah      US
+
+                               business_name                                                                              business_address country
+S1 > S1-665522603  Achyut Colonisers Pvt Ltd  House No 4/82 Madanlal Bohara Kapad Market Ichalkaranji, Ichalkaranji, Kolhapur, Maharashtra   India
+     S3-813562861          Shri Verafayemira                 House No 4/82 Madanlal Bohara Kapad Market Ichalkaranji, Kolhapur, महाराष्ट्र   India
+
+                                      business_name                                                                   business_address country
+S1 > S1-200723243     Unique & Sons Private Limited  Plot No.118, 119 Syno:190, Ip Chandanvelly, Rangareddy, K.V.Rangareddy, Telangana   India
+     S2-952851011      Unique & 5ons Pirave Limited                  PLOT NO.118, 119 SYNO:190, IP CHANDANVELLY, RANGAREDDY, Telangana   India
+     S2-788224506     UNIQUE & SONS LIMITED SERVICE                          #118 , 119 SYNO:190, IP CHANDANVELLY, RANGAREDDY, తెలంగాణ   India
+     S2-221988027                    uniquesons.com                         118 , 119 SYNO:190, IP CHANDANVELLY, RANGAREDDY, Telangana   India
+     S2-621477890  Unique &  Sons Private [Limited]                  PLOT NO.118, 119 SYNO:190, IP CHANDANVELLY, RANGAREDDY, Telangana   India
+     S3-153417633                     Unique & Sons     #118, 119 Syno:190, Ip Chandanvelly, Hyderabad City Region, K.v.rangareddy, TG   India
+     S3-234128350     Unique & Sons Prcvate Limited                                H.no 118, Hyderabad City Region, K.v.rangareddy, TG   India
+
+                               business_name                                                                   business_address country
+S1 > S1-46329934       Sarasva India Limited          9/1/3 Kasundia 2Nd Bye Lane Lp-224/24/1, Santragachi, Howrah, West Bengal   India
+     S2-704697535      limited sarasva india                      9/1/3. KASUNDIA 2ND BYE LANE LP-224/24/1, HOWRAH, West Bengal   India
+     S2-604099225              Sarasva Índia  DOOR NO 9/1/3. KASUNDIA 2ND BYE LANE LP-224/24/1, SANTRAGACHI, HOWRAH, পশ্চিমবঙ্গ   India
+     S2-975202599    SARASVA (INDIA) (INDIA)          9/1/3. KASUNDIA 2ND BYE LANE LP-224/24/1, SANTRAGACHI, HOWRAH, পশ্চিমবঙ্গ   India
+     S3-688076126  Sarasva India [[Limited]]              H.no 9/1/3 Kasundia 2Nd Bye Lane Lp-224/24/1, Santragachi, Howrah, WB   India
+     S3-175132143      Limited Sarasva lndia                   9/1/3 Kasundia 2Nd Bye Lane Lp-224/24/1, Santragachi, Howrah, WB   India
+
+====================================================================================================
+6. FRANCE (test): 10 RANDOM ROWS PER SOURCE
+====================================================================================================
+
+--- test S1 | country=France ---
+   entity_id           business_name                                                 business_address
+S1-758041306        Amicale des High 15 Rangée Farvacque, 11b rue boucicaut, Roubaix, Hauts-de-France
+S1-295585629         Institut Petits         Nouvelle-Aquitaine, Lège-Cap-Ferret, 61 Avenue du Moulin
+S1-742461255 Privée Amicale (France)                     Pays de la Loire, Nantes, 9 Rue Félix Thomas
+S1-665253183    Organisme Union SARL               6 Impasse Saint Honoré, Tourcoing, Hauts-de-France
+S1-306023551    Derives Amicale SARL                 178 Rue Louise Bourgeois, Lille, Hauts-de-France
+S1-294941625         Pre Amicale SCI         50 Rue André Lesca, La Teste-de-Buch, Nouvelle-Aquitaine
+S1-489511170        Amicale des Iris      14 Avenue Jean Paul Marat, Saint-Herblain, Pays de la Loire
+S1-299959870         Clinique Marcel          3 ALL de l Oiseau Lyre, A42, Tourcoing, Hauts-de-France
+S1-354370129  Philharmonique Sportif                           41 Rue Royale, Calais, Hauts-de-France
+S1-429044135      Nantes Comite SARL            15 BD Leon Blum, Batiment B, Nantes, Pays de la Loire
+
+--- test S2 | country=France ---
+   entity_id                         business_name                                          business_address
+ S2-84929399                       LILLE  SPORTIVE                           146 RUE DU MOLINEL, LILLE, Nord
+S2-391695014                     DOV SARL SERVICES                             AVE D’ARGUIN, LÈGE-CAP-FERRET
+S2-288494080 Nature (France) Section International               72 CITÉ DUTEY, BORDEAUX, Nouvelle-Aquitaine
+S2-684470559                Association dês Franco         60 ROUTE DE MARSAC, ST.-NAZAIRE, Pays de la Loire
+ S2-59983937               Bordeaux Rësidence SARL                                1 RUE SAINT-MAUR, BORDEAUX
+S2-980295703                      YB Anciens S.A.S                             54 RUE DE DEIPPE, LILLE, Nord
+S2-189370545                       Maison Bde EURL                    N° 25 AVENUE DE L'HORTICULTURE, NANTES
+S2-212504387                        Deleves Comite                                         RUE JAVARY, LILLE
+S2-541563891                       Sa Mosaic & Cie      369 RUE DE LA RÉPUBLIQUE, Dunkerque, Hauts-de-France
+S2-291566898                       Union de Beauey 350 TER AVENUE DE L'ARGONNE, MÉRIGNAC, Nouvelle-Aquitaine
+
+--- test S3 | country=France ---
+   entity_id                         business_name                                   business_address
+S3-491980724              Solidarite Pharmacie SAS 12 Avenue Du Clos Jaunet, Nantes, Loire-Atlantique
+S3-599609849                  Souffles  Culturelle                     17 Parvis Saint-maurice, Lille
+S3-979624891                    Pharmacie  de Dame           Loire-Atlantique, Nantes, 23 R De Thoiry
+S3-998101177            Malades (France) Sante SAS                  23 Rue Du Tourmalet, St.-herblain
+S3-853046642                          Coeur Centre        5 R Lievbn Delhaye, Calais, Hauts-de-France
+S3-901731655                       egp sportive sa                       Rue Colbert, Tourcoing, Nord
+S3-153725167                              UMU Amis        201 R. Achard, Bordeaux, Nouvelle-Aquitaine
+S3-528104234      Semeuses (France) Sportive S.A.S                         24 Rue Rubens, Lille, Nord
+S3-807075583 Fédération du Développement Francaise                      45 Rue Vital Carles, Bordeaux
+S3-111034561                 Union Holding Aide Du                                      25, Dunkerque
+
+====================================================================================================
+7a. NAME / ADDRESS LENGTH STATS (characters) PER SPLIT, SOURCE, COUNTRY
+====================================================================================================
+
+[name]
+split source country       n  empty%  mean  p5  p50  p95  max
+ test     S1  France  259452     0.0  19.4  12   19   29   57
+ test     S1   India  809986     0.0  26.4  13   27   38   92
+ test     S1      US  663106     0.0  22.5  11   22   35   66
+ test     S2  France  703378     0.0  21.1  11   20   35   61
+ test     S2   India 2312565     0.0  28.3  14   28   44  102
+ test     S2      US 1871330     0.0  24.3  11   24   39   85
+ test     S3  France  731615     0.0  21.1  10   20   36   75
+ test     S3   India 2405000     0.0  27.9  12   28   44  103
+ test     S3      US 1945701     0.0  24.6  11   24   41   85
+train     S1   India  883188     0.0  26.4  13   27   38  105
+train     S1      US 1323633     0.0  22.5  11   22   35   68
+train     S2   India 2017799     0.0  27.4  13   27   42  104
+train     S2      US 3016817     0.0  23.6  11   23   39   87
+train     S3   India 2115547     0.0  27.0  12   27   43  123
+train     S3      US 3170056     0.0  24.0  11   23   40   88
+
+[address]
+split source country       n  empty%  mean  p5  p50  p95  max
+ test     S1  France  259452    0.00  50.1  40   48   65  147
+ test     S1   India  809986    0.00  77.7  47   76  116  268
+ test     S1      US  663106    0.00  35.0  26   34   48   92
+ test     S2  France  703378    3.06  39.5  22   40   59  136
+ test     S2   India 2312565    2.28  68.7  31   68  110  269
+ test     S2      US 1871330    2.94  31.8  22   32   43   75
+ test     S3  France  731615    2.94  40.0  22   41   60  139
+ test     S3   India 2405000    2.46  59.4  20   59  106  267
+ test     S3      US 1945701    2.84  38.8  26   39   53  107
+train     S1   India  883188    0.00  77.7  47   76  116  256
+train     S1      US 1323633    0.00  35.0  26   34   48   93
+train     S2   India 2017799    2.87  68.2  30   68  110  249
+train     S2      US 3016817    3.68  31.5  21   32   43   73
+train     S3   India 2115547    3.07  59.1  19   58  106  240
+train     S3      US 3170056    3.50  38.4  25   39   53  104
+
+====================================================================================================
+7b. TOP 30 TOKENS PER SPLIT AND COUNTRY (all sources pooled, lowercased)
+====================================================================================================
+
+[test | France | address] tokens=12,253,658 vocab=105,957
+  de(8.6%), rue(5.9%), la(3.9%), r(2.9%), loire(2.7%), france(2.4%), hauts(2.4%), bordeaux(2.3%), nouvelle(2.0%), aquitaine(2.0%), nantes(1.9%), lille(1.8%), du(1.8%), pays(1.7%), des(1.6%), nord(1.2%), gironde(1.2%), saint(1.2%), calais(1.1%), atlantique(1.0%), avenue(1.0%), tourcoing(0.9%), dunkerque(0.9%), roubaix(0.9%), nazaire(0.7%), pessac(0.7%), buch(0.6%), teste(0.6%), no(0.6%), cap(0.5%)
+
+[test | France | name] tokens=5,477,978 vocab=149,573
+  sarl(6.5%), sas(4.6%), france(2.9%), club(2.2%), de(1.8%), eurl(1.8%), s(1.8%), sa(1.5%), amicale(1.5%), sasu(1.3%), sci(1.2%), a(1.2%), maison(1.1%), du(1.1%), ecole(1.1%), centre(1.0%), groupe(1.0%), comite(1.0%), com(0.9%), union(0.9%), fils(0.9%), des(0.8%), développement(0.8%), sportive(0.8%), cie(0.7%), amis(0.7%), primaire(0.6%), international(0.6%), participations(0.6%), distribution(0.6%)
+
+[test | India | address] tokens=60,997,386 vocab=425,775
+  no(4.9%), delhi(2.2%), road(1.8%), nagar(1.3%), floor(1.3%), c(1.1%), mumbai(1.1%), a(1.0%), 1(1.0%), maharashtra(0.9%), new(0.9%), h(0.8%), west(0.8%), plot(0.8%), b(0.8%), o(0.7%), 2(0.7%), bangalore(0.7%), pradesh(0.7%), mh(0.6%), city(0.6%), 3(0.5%), s(0.5%), pune(0.5%), kolkata(0.5%), near(0.5%), door(0.5%), d(0.4%), block(0.4%), south(0.4%)
+
+[test | India | name] tokens=21,221,594 vocab=540,010
+  limited(9.0%), private(8.2%), ltd(4.1%), pvt(2.7%), लिमिटेड(1.6%), india(1.5%), प्राइवेट(1.3%), llp(1.0%), services(1.0%), center(0.7%), industries(0.7%), enterprises(0.6%), com(0.6%), ventures(0.6%), group(0.6%), public(0.6%), co(0.6%), exports(0.5%), solutions(0.5%), trading(0.5%), brothers(0.5%), holdings(0.4%), infratech(0.4%), overseas(0.4%), technologies(0.4%), s(0.3%), l(0.3%), m(0.3%), sri(0.3%), प्रा(0.3%)
+
+[test | US | address] tokens=25,946,822 vocab=263,194
+  street(1.9%), road(1.7%), st(1.6%), drive(1.5%), rd(1.5%), dr(1.3%), avenue(1.2%), city(1.2%), ave(1.1%), tx(1.0%), unit(0.8%), new(0.8%), ny(0.8%), nc(0.7%), texas(0.7%), north(0.7%), lane(0.6%), oh(0.6%), york(0.6%), il(0.6%), ln(0.6%), carolina(0.5%), 1(0.5%), ct(0.5%), virginia(0.5%), ohio(0.5%), tn(0.4%), va(0.4%), az(0.4%), ma(0.4%)
+
+[test | US | name] tokens=16,218,143 vocab=614,244
+  llc(5.2%), inc(3.9%), partners(1.4%), corp(1.2%), l(1.2%), center(1.2%), group(1.2%), and(1.1%), s(1.1%), co(1.0%), c(1.0%), ltd(0.9%), com(0.8%), holdings(0.8%), care(0.8%), of(0.7%), associates(0.6%), services(0.6%), d(0.5%), health(0.5%), p(0.4%), lp(0.4%), clinic(0.4%), pc(0.4%), the(0.4%), a(0.3%), corporation(0.3%), pediatric(0.3%), medicine(0.3%), service(0.3%)
+
+[train | India | address] tokens=55,199,232 vocab=433,780
+  no(4.8%), delhi(2.3%), road(1.8%), nagar(1.4%), floor(1.4%), c(1.1%), mumbai(1.1%), 1(1.0%), maharashtra(1.0%), a(1.0%), new(0.9%), west(0.8%), plot(0.8%), h(0.8%), b(0.8%), 2(0.8%), o(0.7%), bangalore(0.7%), pradesh(0.7%), mh(0.6%), city(0.6%), 3(0.5%), s(0.5%), pune(0.5%), kolkata(0.5%), near(0.5%), block(0.4%), d(0.4%), door(0.4%), south(0.4%)
+
+[train | India | name] tokens=18,819,448 vocab=533,765
+  limited(9.2%), private(8.5%), ltd(4.2%), pvt(2.8%), लिमिटेड(1.6%), india(1.6%), प्राइवेट(1.3%), services(1.0%), llp(1.0%), com(0.8%), center(0.7%), co(0.6%), industries(0.5%), enterprises(0.5%), solutions(0.5%), brothers(0.5%), trading(0.5%), ventures(0.5%), group(0.4%), public(0.4%), exports(0.4%), technologies(0.4%), partners(0.3%), s(0.3%), m(0.3%), प्रा(0.3%), लि(0.3%), holdings(0.3%), sri(0.3%), traders(0.3%)
+
+[train | US | address] tokens=43,172,431 vocab=350,591
+  street(1.9%), road(1.8%), drive(1.6%), st(1.5%), rd(1.4%), avenue(1.3%), dr(1.3%), city(1.1%), ave(1.0%), tx(1.0%), unit(0.9%), ny(0.8%), new(0.7%), nc(0.7%), texas(0.7%), lane(0.7%), oh(0.7%), north(0.6%), il(0.6%), york(0.6%), ln(0.5%), carolina(0.5%), 1(0.5%), ct(0.5%), va(0.5%), tn(0.5%), ohio(0.4%), virginia(0.4%), ma(0.4%), az(0.4%)
+
+[train | US | name] tokens=26,541,351 vocab=987,530
+  llc(5.5%), inc(4.0%), l(1.3%), center(1.2%), partners(1.1%), and(1.1%), s(1.1%), c(1.1%), corp(1.0%), com(1.0%), group(0.9%), co(0.8%), care(0.8%), of(0.7%), ltd(0.7%), associates(0.6%), services(0.6%), holdings(0.6%), d(0.6%), health(0.5%), p(0.5%), lp(0.4%), pc(0.4%), a(0.4%), clinic(0.4%), the(0.4%), corporation(0.3%), pediatric(0.3%), medicine(0.3%), service(0.3%)
